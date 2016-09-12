@@ -2,7 +2,7 @@
 
 This example reproduces an issue while rendering FreeMarker templates with Vertx/SpringBoot.
 
-The issue is happens when spring-boot-maven-plugin 1.4.0.RELEASE is used and the maven "resources" are not copied into the root of the jar.
+The issue happens when spring-boot-maven-plugin 1.4.0.RELEASE is used and the maven "resources" are not copied into the root of the jar.
 When spring-boot-maven-plugin 1.2.4.RELEASE version is used, everything works just fine.
 
 To reproduce, edit the pom.xml and change the spring-boot-maven-plugin version.
@@ -14,3 +14,5 @@ To build the "fat jar"
 To run the fat jar:
 
     java -jar target/springboot-example-1.2.4.RELEASE.jar
+
+Reported issue: https://github.com/vert-x3/vertx-web/issues/452
